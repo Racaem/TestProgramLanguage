@@ -1,0 +1,16 @@
+ 
+
+def fib int a -> int
+    var result1:int = do fib a-1
+    var result2:int = do fib a-2
+    if a <= 1
+        return a
+    end
+    return result1 + result2
+end
+
+def main -> int
+    var result:int = do fib 42
+    outf "%d",result
+    return 0
+end
